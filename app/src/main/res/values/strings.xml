@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Calculatrice</string>
+
+    <string-array name="choice">
+        <item>+</item>
+        <item>-</item>
+        <item>*</item>
+        <item>/</item>
+    </string-array>
 </resources>
