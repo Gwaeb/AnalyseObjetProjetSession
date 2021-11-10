@@ -13,9 +13,9 @@ public class Divide implements Chain{
     @Override
     public void calculate(int num1, int num2, String operation, TextView tw) {
 
-        if (operation.compareTo("+") == 0) {
+        if (operation.compareTo("/") == 0) {
 
-            tw.setText(num1 + num2);
+            tw.setText(num1 / num2 +"");
         } else {
             tw.setText("Not able to do it");
         }

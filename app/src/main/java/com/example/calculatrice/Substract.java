@@ -13,9 +13,9 @@ public class Substract implements Chain{
     @Override
     public void calculate(int num1, int num2, String operation, TextView tw) {
 
-        if(operation.compareTo("+") == 0){
+        if(operation.compareTo("-") == 0){
 
-            tw.setText(num1 + num2);
+            tw.setText(num1 - num2 + "");
         } else {
             nextInChain.calculate(num1, num2, operation, tw);
         }

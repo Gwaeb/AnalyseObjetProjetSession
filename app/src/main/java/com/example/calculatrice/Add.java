@@ -16,7 +16,8 @@ public class Add implements Chain{
 
         if(operation.compareTo("+") == 0){
 
-            tw.setText(num1 + num2);
+
+            tw.setText((num1 + num2) + "");
         } else {
             nextInChain.calculate(num1, num2, operation, tw);
         }

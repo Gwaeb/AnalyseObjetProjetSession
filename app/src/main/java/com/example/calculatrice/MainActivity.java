@@ -17,10 +17,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private Chain c3;
     private Chain c4;
 
-    private EditText et1 = findViewById(R.id.inputNumber1);
-    private EditText et2 = findViewById(R.id.inputNumber2);
+    private EditText et1;
+    private EditText et2;
 
-    private TextView tw = findViewById(R.id.result);
+    private TextView tw;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +37,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         c2 = new Substract();
         c3 = new Multiply();
         c4 = new Divide();
+
+        et1 = findViewById(R.id.inputNumber1);
+        et2 = findViewById(R.id.inputNumber2);
+        tw = findViewById(R.id.result);
 
         c1.setNextChain(c2);
         c2.setNextChain(c3);
