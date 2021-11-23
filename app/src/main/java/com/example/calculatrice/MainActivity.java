@@ -12,13 +12,15 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
-    private Chain c1;
-    private Chain c2;
-    private Chain c3;
-    private Chain c4;
+    private AChain c1;
+    private AChain c2;
+    private AChain c3;
+    private AChain c4;
 
     private EditText et1;
     private EditText et2;
+
+    private String operation;
 
     private TextView tw;
 
@@ -47,14 +49,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         c3.setNextChain(c4);
     }
 
-    private String operation;
+
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
         operation = adapterView.getItemAtPosition(i).toString();
-        //Toast.makeText(adapterView.getContext(), text, Toast.LENGTH_SHORT).show();
     }
-
-
 
     public void Calculate(View v){
 
@@ -66,7 +65,5 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     }
 
     @Override
-    public void onNothingSelected(AdapterView<?> adapterView) {
-
-    }
+    public void onNothingSelected(AdapterView<?> adapterView) {}
 }
