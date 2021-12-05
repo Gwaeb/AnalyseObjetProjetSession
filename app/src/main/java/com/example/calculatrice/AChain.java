@@ -4,13 +4,13 @@ import android.widget.TextView;
 
 public abstract class AChain {
     protected AChain nextInChain;
-    protected int result;
+    protected float result;
 
     public AChain getNextChain(){
         return nextInChain;
     }
 
-    public int getResult(){
+    public float getResult(){
         return result;
     }
 

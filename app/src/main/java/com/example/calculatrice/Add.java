@@ -11,6 +11,7 @@ public class Add extends AChain {
             result = num1 + num2;
             tw.setText( result + "");
         } else {
+            result = Float.parseFloat(null);
             nextInChain.calculate(num1, num2, operation, tw);
         }
     }
