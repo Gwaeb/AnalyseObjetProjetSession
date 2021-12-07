@@ -18,5 +18,5 @@ public abstract class AChain {
         nextInChain = nextChain;
     }
 
-    public abstract void calculate(int num1, int num2, String request, TextView tw);
+    public abstract void calculate(float num1, float num2, String request, TextView tw);
 }

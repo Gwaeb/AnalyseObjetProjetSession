@@ -57,8 +57,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     public void Calculate(View v){
 
-        int num1 = Integer.parseInt(et1.getText().toString());
-        int num2 = Integer.parseInt(et2.getText().toString());
+        float num1 = Float.parseFloat(et1.getText().toString());
+        float num2 = Float.parseFloat(et2.getText().toString());
 
 
         c1.calculate(num1, num2, operation, tw);
